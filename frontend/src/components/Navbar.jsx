@@ -8,21 +8,20 @@ import { useGlobalState } from './store';
 const Navbar = () => {
     // const [connectedAccount] = useGlobalState('connectedAccount')
   return <header className={`flex justify-between p-5 top-0 z-0 shadow-md left-0 right-0 fixed bg-slate-200 `}>
-    <div className="flex  ">
+    <div className="hidden">
         
         <div className="flex space-x-2 justify-between items-center font-light text-2l text-white">
         <a href='/'> 
-        <button className="flex space-x-2 hover:cursor-pointer bg-blue-500 px-5 py-2 hover:bg-blue-600
+        <button className="flex space-x-2 hover:cursor-pointer bg-blue-700 px-5 py-2 hover:bg-blue-600
         rounded-md shadow-md items-center shadow-slate-500 hover:shadow-slate-800 leading-tight uppercase " >
             <HiOutlineHome className="text-white mr-1"/>
-            
              Home </button>
              </a>
         </div>
     </div>
 
     <div className="flex space-x-2 justify-between items-center font-light text-2xl text-black uppercase"> 
-    <p >EOA Wallet</p>
+    <p className='font-semibold'>EOA Wallet</p>
 
     </div>
 

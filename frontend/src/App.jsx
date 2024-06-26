@@ -6,10 +6,6 @@ import { isWalletConnected } from "./components/Blockchains"
 
 function App() {
 
-  
-
-const  background = './public/home.jpg'
-
 const [loaded, setLoaded] = useState(false)
 
 useEffect(() => {
@@ -24,10 +20,9 @@ useEffect(() => {
   
      <div className='min-h-screen'>
       <div
-    className=" p-60 md:px-40 "
-    style={{ background: `url('${background}') fixed no-repeat top/cover `}}
+    className=" p-8 md:px-40 bg-blue-700"
     >
-   <Navbar/>
+   {/* <Navbar/> */}
    <Hero />
    <User/>
     </div>
